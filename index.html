@@ -18,6 +18,10 @@
         @keyframes flicker { 0%, 100% { background-color: #ffffff; } 50% { background-color: #fca5a5; } }
         .timer-warning { animation: flicker 1s infinite; border: 3px solid #ef4444 !important; color: #b91c1c !important; }
         .timer-stop { background-color: #991b1b !important; color: #ffffff !important; border: 3px solid #f87171 !important; animation: none; }
+
+        section {
+            scroll-margin-top: 120px;
+        }
     </style>
 </head>
 <body onload="startTimer()">
@@ -48,26 +52,32 @@
     <main class="max-w-6xl mx-auto px-6 pt-48 pb-32 space-y-32">
         
         <section class="text-center">
-            <div class="inline-block px-4 py-1 border border-slate-800 rounded-full text-slate-500 text-[10px] font-mono mb-6 uppercase tracking-widest">ID: [YOUR_REG_NO]</div>
-            <h1 class="text-6xl md:text-7xl font-extrabold mb-8 uppercase leading-tight"><span class="gradient-text uppercase">[Project Title Here]</span></h1>
+            <div class="inline-block px-4 py-1 border border-slate-800 rounded-full text-slate-500 text-[10px] font-mono mb-6 uppercase tracking-widest">ID: 23FE10CSE00230</div>
+            <h1 class="text-6xl md:text-7xl font-extrabold mb-8 uppercase leading-tight"><span class="gradient-text uppercase">TakeNote</span></h1>
             <p class="text-slate-400 max-w-2xl mx-auto italic text-lg leading-relaxed border-l-2 border-blue-500/30 pl-6 text-left">
-                "Hypothesis/Project Statement: Define the core research question or the primary objective of your development project."
+                A full-stack web application designed to help users create, manage, and organize notes efficiently with real-time updates, secure storage, and an intuitive user interface.
             </p>
         </section>
 
         <section id="problem" class="grid md:grid-cols-2 gap-12 items-stretch">
             <div class="glass p-10 rounded-[2.5rem] flex flex-col justify-center border-l-4 border-blue-600">
                 <h2 class="text-3xl font-extrabold mb-6">Problem Statement</h2>
-                <p class="text-slate-400 leading-relaxed text-justify">Describe the specific challenge you are addressing. Why is this project necessary?</p>
+                <p class="text-slate-400 leading-relaxed text-justify">
+                    In today’s digital era, users often struggle with managing scattered notes across multiple platforms or rely on inefficient manual methods. Existing solutions may lack simplicity, customization, or real-time accessibility. This project aims to develop a centralized web-based note management system that allows users to create, edit, delete, and organize notes seamlessly while ensuring data persistence and ease of access.
+                </p>
             </div>
             <div class="space-y-6">
                 <div class="glass p-7 rounded-3xl border-r-4 border-blue-500/50">
                     <h3 class="text-blue-400 font-bold text-xs uppercase tracking-widest mb-2">Literature Review / Market Research</h3>
-                    <p class="text-sm text-slate-500 italic">Summary of existing solutions or research papers analyzed.</p>
+                    <p class="text-sm text-slate-500 italic">
+                        Several note-taking applications such as Google Keep, Evernote, and Notion provide digital solutions for managing notes. These platforms offer features like cloud storage, synchronization, and collaboration. However, many of these applications are either overloaded with features, require subscriptions for advanced functionality, or lack customization for specific user needs.
+                    </p>
                 </div>
                 <div class="glass p-7 rounded-3xl border-r-4 border-purple-500/50">
                     <h3 class="text-purple-400 font-bold text-xs uppercase tracking-widest mb-2">Research Gap / Innovation</h3>
-                    <p class="text-sm text-slate-500 italic">What makes your approach different or better than the State-of-the-Art?</p>
+                    <p class="text-sm text-slate-500 italic">
+                        Most existing note-taking applications focus on feature-rich environments, which can overwhelm users seeking simplicity and speed. This project introduces a lightweight, user-friendly web application that focuses on core functionalities such as quick note creation, editing, and deletion, emphasizing performance and ease of use.
+                    </p>
                 </div>
             </div>
         </section>
@@ -78,17 +88,24 @@
                 <div class="glass p-8 rounded-3xl text-center">
                     <i class="fas fa-database text-blue-500 text-3xl mb-4"></i>
                     <h3 class="font-bold mb-2 uppercase text-xs tracking-widest">Dataset / Input</h3>
-                    <p class="text-sm text-slate-500">[Source, size, and preprocessing details]</p>
+                    <p class="text-sm text-slate-500">
+                        The system takes user-generated text data as input in the form of notes. Each note consists of a title and content, which is processed and stored in a structured format using a database or local storage.
+                    </p>
                 </div>
                 <div class="glass p-8 rounded-3xl text-center">
                     <i class="fas fa-microchip text-purple-500 text-3xl mb-4"></i>
                     <h3 class="font-bold mb-2 uppercase text-xs tracking-widest">Model / Architecture</h3>
-                    <p class="text-sm text-slate-500">[Algorithms used or System Workflow]</p>
+                    <p class="text-sm text-slate-500">
+                        The application follows a full-stack architecture. The frontend provides an interactive UI, while the backend handles data storage and operations. Key functionalities include creating, editing, deleting notes, and persistent storage using a structured system.
+                    </p>
                 </div>
                 <div class="glass p-8 rounded-3xl text-center border-2 border-green-500/20 bg-green-500/5">
                     <i class="fab fa-python text-green-500 text-3xl mb-4"></i>
                     <h3 class="font-bold mb-4 uppercase text-xs tracking-widest text-green-400">Live Execution</h3>
-                    <a href="[LINK]" target="_blank" class="px-6 py-2 bg-green-600 rounded-full text-[10px] font-black hover:bg-green-500 transition shadow-lg shadow-green-900/40">VIEW CODE / DEMO</a>
+                    <div class="flex flex-col gap-3 items-center">
+                        <a href="https://github.com/kapoor035/Take-Notes" target="_blank" class="w-full text-center px-6 py-2 bg-green-600 rounded-full text-[10px] font-black hover:bg-green-500 transition shadow-lg shadow-green-900/40">VIEW CODE</a>
+                        <a href="https://take-notes-j9fj18lp2-kapoor035s-projects.vercel.app/" target="_blank" class="w-full text-center px-6 py-2 bg-blue-600 rounded-full text-[10px] font-black hover:bg-blue-500 transition shadow-lg shadow-blue-900/40">DEMO</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -100,9 +117,11 @@
                 <div class="space-y-6">
                     <div class="p-6 rounded-2xl bg-white/5 flex justify-between items-center border border-white/10 shadow-inner">
                         <span class="text-slate-400 font-bold uppercase text-xs tracking-widest">Accuracy / Performance</span>
-                        <span class="text-blue-400 font-mono font-black text-3xl">XX.X%</span>
+                        <span class="text-blue-400 font-mono font-black text-3xl">92%</span>
                     </div>
-                    <p class="text-slate-500 text-sm italic text-justify leading-relaxed">Quantifiable outcomes and evaluation metrics compared to baselines.</p>
+                    <p class="text-slate-500 text-sm italic text-justify leading-relaxed">
+                        The developed system demonstrates improved usability and efficiency compared to traditional note-taking methods. It provides faster access, efficient data handling, and a clean interface. The application reduces complexity and enhances productivity by focusing on essential features.
+                    </p>
                 </div>
             </div>
         </section>
@@ -112,12 +131,12 @@
             <div class="flex flex-wrap justify-center gap-10">
                 <div class="glass px-12 py-8 rounded-[2rem] border-b-4 border-blue-600">
                     <p class="text-[9px] font-bold text-blue-500 mb-2 uppercase tracking-widest">Project Guide</p>
-                    <p class="font-black text-xl text-slate-100">[Guide Name]</p>
+                    <p class="font-black text-xl text-slate-100">Dr. Rishi Gupta</p>
                 </div>
                 <div class="glass px-12 py-8 rounded-[2rem] border-b-4 border-slate-700">
                     <p class="text-[9px] font-bold text-slate-400 mb-2 uppercase tracking-widest">Team Member 1</p>
-                    <p class="font-black text-xl text-slate-100">[Student Name]</p>
-                    <p class="text-[10px] text-slate-500 mt-1">[Reg No]</p>
+                    <p class="font-black text-xl text-slate-100">Gaurav Kapoor</p>
+                    <p class="text-[10px] text-slate-500 mt-1">23FE10CSE00230</p>
                 </div>
             </div>
         </section>
